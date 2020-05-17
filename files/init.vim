@@ -54,6 +54,7 @@ Plug 'chr4/nginx.vim'
 Plug 'hashivim/vim-vagrant'
 Plug 'vim-vdebug/vdebug'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 " }}}
