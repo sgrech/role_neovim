@@ -12,6 +12,7 @@ set softtabstop=0
 set expandtab
 set shiftwidth=2
 set smarttab
+set mouse=a
 inoremap jk <esc>
 inoremap <esc> <nop>
 noremap <Up> <nop>
@@ -29,11 +30,22 @@ nnoremap <LocalLeader>pwd :echo @%<CR>
 nnoremap <LocalLeader>ss :set spell spelllang=en_gb<CR>
 nnoremap <LocalLeader>us :set nospell<CR>
 nnoremap <LocalLeader>sn :set number!<CR>
+nnoremap <LocalLeader>fr :Format<CR>
 
 augroup force_file_maps
   autocmd!
   autocmd BufReadPost *.conf.j2 set filetype=nginx
   autocmd BufReadPost *.html.twig.tmpl set filetype=htmldjango.twig
+augroup END
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
 augroup END
 " }}}
 
