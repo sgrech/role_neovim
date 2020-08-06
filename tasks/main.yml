@@ -17,6 +17,7 @@
       - python3-neovim
       - git
       - silversearcher-ag
+      - latexmk
 
 - name: Get and install neovim appimage
   get_url:

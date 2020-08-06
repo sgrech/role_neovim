@@ -65,6 +65,7 @@ Plug 'hashivim/vim-vagrant'
 Plug 'vim-vdebug/vdebug'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
+Plug 'lervag/vimtex'
 
 call plug#end()
 " }}}
@@ -88,6 +89,8 @@ let g:lightline = {'colorscheme': 'monokai_tasty'}
 set laststatus=2
 " Set vDebug php options
 let g:vdebug_options = { 'port' : 9000, 'timeout' : 20, 'server' : '', 'debug_file_level' : 0, 'debug_file' : '', 'path_maps' : { "/home/deploy/rizk": "/Users/shane.grech/Workspace/rizk/rizk", 'break_on_open': 0 } }
+
+let g:tex_flavor = 'latex'
 " }}}
 
 " Coc Config {{{
