@@ -13,7 +13,6 @@
   apt:
     state: present
     name:
-      - python-neovim
       - python3-neovim
       - git
       - silversearcher-ag
