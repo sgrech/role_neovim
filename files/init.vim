@@ -38,11 +38,11 @@ augroup force_file_maps
   autocmd BufReadPost *.html.twig.tmpl set filetype=htmldjango.twig
 augroup END
 
-augroup format_file_types
-  autocmd!
-  autocmd FileType javascript nnoremap <LocalLeader>fr :!npx prettier --write %<CR>
-  autocmd FileType json nnoremap <LocalLeader>fr :%!jq '.'<CR>
-augroup END
+" augroup format_file_types
+"   autocmd!
+"   autocmd FileType javascript nnoremap <LocalLeader>fr :!npx prettier --write %<CR>
+"   autocmd FileType json nnoremap <LocalLeader>fr :%!jq '.'<CR>
+" augroup END
 
 let g:netrw_liststyle = 3
 " }}}
