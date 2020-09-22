@@ -66,6 +66,7 @@ Plug 'vim-vdebug/vdebug'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'lervag/vimtex'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 " }}}
