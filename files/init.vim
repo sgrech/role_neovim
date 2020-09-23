@@ -67,6 +67,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'lervag/vimtex'
 Plug 'leafgarland/typescript-vim'
+Plug 'phanviet/vim-monokai-pro'
 
 call plug#end()
 " }}}
@@ -92,6 +93,10 @@ set laststatus=2
 let g:vdebug_options = { 'port' : 9000, 'timeout' : 20, 'server' : '', 'debug_file_level' : 0, 'debug_file' : '', 'path_maps' : { "/home/deploy/rizk": "/Users/shane.grech/Workspace/rizk/rizk", 'break_on_open': 0 } }
 
 let g:tex_flavor = 'latex'
+
+" set monokai theme
+set termguicolors
+colorscheme monokai_pro
 " }}}
 
 " Coc Config {{{
