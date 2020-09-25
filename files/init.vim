@@ -30,7 +30,7 @@ nnoremap <LocalLeader>pwd :echo @%<CR>
 nnoremap <LocalLeader>ss :set spell spelllang=en_gb<CR>
 nnoremap <LocalLeader>us :set nospell<CR>
 nnoremap <LocalLeader>sn :set number!<CR>
-nnoremap <LocalLeader>fr :Format<CR>
+nnoremap <LocalLeader>fr :Format<CR>:write<CR>
 
 augroup force_file_maps
   autocmd!
