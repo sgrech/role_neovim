@@ -31,6 +31,8 @@ nnoremap <LocalLeader>ss :set spell spelllang=en_gb<CR>
 nnoremap <LocalLeader>us :set nospell<CR>
 nnoremap <LocalLeader>sn :set number!<CR>
 nnoremap <LocalLeader>fr :Format<CR>:write<CR>
+nnoremap <LocalLeader>fx :AutoFix<CR>
+nnoremap <LocalLeader>fo :OrgImports<CR>
 
 augroup force_file_maps
   autocmd!
@@ -217,6 +219,12 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+" Add `:AutoFix` command to execute tsserver Auto Fix.
+command! -nargs=0 AutoFix   :call     CocAction('runCommand', 'tsserver.executeAutofix')
+
+" Add `:OrgImports` command to execute tsserver organize imports.
+command! -nargs=0 OrgImports   :call     CocAction('runCommand', 'tsserver.organizeImports')
 
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
