@@ -36,7 +36,14 @@ nnoremap <LocalLeader>fo :OrgImports<CR>
 nnoremap <LocalLeader>st :Ack!<Space>
 nnoremap <LocalLeader>sf :CtrlP<CR>
 nnoremap <LocalLeader>ss :CocList symbols<CR>
-
+nnoremap <LocalLeader>tw :FloatermNew<CR>
+tnoremap <LocalLeader>tw  <C-\><C-n>:FloatermNew<CR>
+nnoremap <LocalLeader>tp  :FloatermPrev<CR>
+tnoremap <LocalLeader>tp  <C-\><C-n>:FloatermPrev<CR>
+nnoremap <LocalLeader>tn  :FloatermNext<CR>
+tnoremap <LocalLeader>tn  <C-\><C-n>:FloatermNext<CR>
+nnoremap <LocalLeader>tt  :FloatermToggle<CR>
+tnoremap <LocalLeader>tt  <C-\><C-n>:FloatermToggle<CR>
 
 augroup force_file_maps
   autocmd!
