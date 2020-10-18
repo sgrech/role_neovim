@@ -24,15 +24,19 @@ let maplocalleader="\<space>"
 " Open new tab and show file explorer
 " nnoremap <LocalLeader>tn :tabnew <bar> :Explore<CR>
 nnoremap <LocalLeader>nh :noh<CR>
-nnoremap <LocalLeader>rn :set relativenumber!<CR>
+" nnoremap <LocalLeader>rn :set relativenumber!<CR>
 nnoremap <LocalLeader>id :put! =strftime('%c')<CR>
 nnoremap <LocalLeader>pwd :echo @%<CR>
-nnoremap <LocalLeader>ss :set spell spelllang=en_gb<CR>
-nnoremap <LocalLeader>us :set nospell<CR>
+" nnoremap <LocalLeader>ss :set spell spelllang=en_gb<CR>
+" nnoremap <LocalLeader>us :set nospell<CR>
 nnoremap <LocalLeader>sn :set number!<CR>
 nnoremap <LocalLeader>fr :Format<CR>:write<CR>
 nnoremap <LocalLeader>fx :AutoFix<CR>
 nnoremap <LocalLeader>fo :OrgImports<CR>
+nnoremap <LocalLeader>st :Ack!<Space>
+nnoremap <LocalLeader>sf :CtrlP<CR>
+nnoremap <LocalLeader>ss :CocList symbols<CR>
+
 
 augroup force_file_maps
   autocmd!
@@ -70,6 +74,7 @@ Plug 'tpope/vim-commentary'
 Plug 'lervag/vimtex'
 Plug 'leafgarland/typescript-vim'
 Plug 'phanviet/vim-monokai-pro'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 " }}}
@@ -83,8 +88,6 @@ if executable("ag")
   let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --ignore ''.git'' --ignore ''.DS_Store'' --ignore ''node_modules'' --hidden -g ""'
 endif
 cnoreabbrev Ack Ack!
-nnoremap <silent> <LocalLeader>st :Ack!<Space>
-nnoremap <silent> <LocalLeader>sf :CtrlP<CR>
 
 colorscheme vim-monokai-tasty
 
