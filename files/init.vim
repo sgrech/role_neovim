@@ -72,16 +72,17 @@ Plug 'patstockwell/vim-monokai-tasty'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
-Plug 'lumiliet/vim-twig'
+" Plug 'lumiliet/vim-twig'
 Plug 'chr4/nginx.vim'
 Plug 'hashivim/vim-vagrant'
-Plug 'vim-vdebug/vdebug'
+" Plug 'vim-vdebug/vdebug'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
-Plug 'lervag/vimtex'
+" Plug 'lervag/vimtex'
 Plug 'leafgarland/typescript-vim'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'voldikss/vim-floaterm'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
 " }}}
@@ -102,13 +103,18 @@ let g:lightline = {'colorscheme': 'monokai_tasty'}
 " Force lightline status
 set laststatus=2
 " Set vDebug php options
-let g:vdebug_options = { 'port' : 9000, 'timeout' : 20, 'server' : '', 'debug_file_level' : 0, 'debug_file' : '', 'path_maps' : { "/home/deploy/rizk": "/Users/shane.grech/Workspace/rizk/rizk", 'break_on_open': 0 } }
+" let g:vdebug_options = { 'port' : 9000, 'timeout' : 20, 'server' : '', 'debug_file_level' : 0, 'debug_file' : '', 'path_maps' : { "/home/deploy/rizk": "/Users/shane.grech/Workspace/rizk/rizk", 'break_on_open': 0 } }
 
-let g:tex_flavor = 'latex'
+" let g:tex_flavor = 'latex'
 
 " set monokai theme
 set termguicolors
 colorscheme monokai_pro
+
+
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+let g:terraform_fmt_on_save=1
 " }}}
 
 " Coc Config {{{
