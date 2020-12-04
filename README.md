@@ -1,34 +1,31 @@
-Role Name
-=========
+# Role Name
 
 Ansible role used to install neovim and vimplug on an ubuntu based system (tested on debian 10, ubuntu 18.04 and linux mint 19).
 
-Requirements
-------------
+## Requirements
 
 None.
 
-Role Variables
---------------
+## Role Variables
+
+Use the following variable to override neovim appimage version (defaults to v0.4.4 )
+
+- neovim_version
 
 None.
 
-Dependencies
-------------
+## Dependencies
 
 None.
 
-Example Playbook
-----------------
+## Example Playbook
 
 TODO.
 
-License
--------
+## License
 
 GPL
 
-Author Information
-------------------
+## Author Information
 
 TODO

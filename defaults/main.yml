@@ -1,2 +1,3 @@
 ---
-# defaults file for role_neovim
+neovim_version: v0.4.4
+
