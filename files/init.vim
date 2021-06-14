@@ -11,7 +11,6 @@ set tabstop=2
 set softtabstop=0
 set expandtab
 set shiftwidth=2
-set smarttab
 set mouse=a
 inoremap jk <esc>
 inoremap <esc> <nop>
@@ -77,7 +76,9 @@ Plug 'chr4/nginx.vim'
 Plug 'hashivim/vim-vagrant'
 " Plug 'vim-vdebug/vdebug'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-vinegar'
 " Plug 'lervag/vimtex'
 Plug 'leafgarland/typescript-vim'
 Plug 'phanviet/vim-monokai-pro'
