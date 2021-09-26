@@ -85,6 +85,7 @@ Plug 'phanviet/vim-monokai-pro'
 Plug 'voldikss/vim-floaterm'
 Plug 'hashivim/vim-terraform'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'mustache/vim-mustache-handlebars'
 
 call plug#end()
 " }}}
